@@ -4,13 +4,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fast and Foodious</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
-<body>
+<body style="background-color: rgb(207, 184, 207);">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <header>
         <nav class="navbar navbar-expand-lg" style="background-color: rgb(179, 98, 179);">
             <div class="container-fluid">
-                <img class="" src="assets/img/logo.svg" alt="Logo" width="50" height="50">
+                <img class="me-2" src="assets/img/logo.svg" alt="Logo" width="50" height="50">
                 <a class="navbar-brand" href="#">Fast and Foodious</a>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto">
@@ -36,6 +37,98 @@
           </nav>
     </header>
 
+    <body>
+        <!-- Card image -->
+        <div class="card text-bg-dark">
+            <img src="assets/img/restaurant.jpg" class="object-fit-cover opacity-75" alt="Nuestro restaurante">
+            <div class="card-img-overlay">
+                <div class="h-100 container text-end d-flex flex-column align-items-end justify-content-center fs-5">
+                    <h1 class="card-title">Fast and Foodious</h5>
+                    <p class="card-text">Nuestro espacio de completa calidez para que disfrutes la mejor comida rapida de la provincia</p>
+                    <div class="d-flex justify-content-end grid gap-2">
+                        <button type="button" class="btn btn-outline-light">Conocer direccion</button>
+                        <button type="button" class="btn btn-success">Pedir ya</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p class="fs-1 text-center m-2">Nuestras especialidades</p>
+        <!-- Card group -->
+        <div class="card-group grid gap-2 w-75 p-3 mx-auto">
+            <div class="card border border-black rounded">
+                <img src="assets/img/lomo.jpg" class="card-img-top" alt="...">
+                <div class="d-flex align-items-center mt-2 ms-3 mb-0">
+                    <span class="badge text-bg-warning">Favorita de la gente</span>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Lomo completo</h5>
+                    <p class="card-text">Consiste en un filete de lomo de ternera, queso, jamón, huevo frito, tomate, lechuga y aderezos varios como mostaza, o mayonesa entre dos panes de lomo y de forma rectangular; muchas veces el pan se tuesta para evitar que la humedad de los ingredientes lo moje.</p>
+                </div>
+            </div>
+            <div class="card border border-black rounded">
+                <img src="assets/img/pizza.jpg" class="card-img-top" alt="...">
+                <div class="d-flex align-items-center mt-2 ms-3 mb-0">
+                    <span class="badge text-bg-danger">Clasico de la casa</span>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Pizza </h5>
+                    <p class="card-text">Plato de origen italiano que consiste en una masa de pan plano cubierta con salsa de tomate y queso, y a menudo otros ingredientes, como verduras, carnes y mariscos. Se cocina en un horno de alta temperatura hasta que la masa esté crujiente y el queso se derrita y burbujee.</p>
+                </div>
+            </div>
+            <div class="card border border-black rounded">
+                <img src="assets/img/hamburger.jpg" class="card-img-top" alt="...">
+                <div class="d-flex align-items-center mt-2 ms-3 mb-0">
+                    <span class="badge text-bg-success">La mas veloz</span>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Hamburguesa</h5>
+                    <p class="card-text">Sándwich que consiste en un filete de carne picada, generalmente de carne de res, cocinado a la parrilla o a la plancha, entre dos panes. A menudo se le agregan otros ingredientes, como queso, lechuga, tomate, cebolla, pepinillos, salsas y condimentos.</p>                
+                </div>
+            </div>
+        </div>
+        <!-- Card and side text -->
+        <div class="card mb-3 mx-auto">
+            <div class="row g-0">
+                <div class="col-md-4">
+                    <img src="assets/img/restaurant2.jpg" class="img-fluid rounded-start w-100 h-100" alt="Nuestro lugar">
+                </div>
+                <div class="col-md-8" style="background-color: rgb(206, 169, 206); border: 0px;">
+                    <div class="card-body">
+                        <h5 class="card-title fs-4">Restaurante para toda la familia</h5>
+                        <p class="card-text fs-5"> Un lugar para toda la familia, especializado en la elaboración de lomitos, un plato tradicional de la gastronomía argentina.<p>
+                        <p class="card-text fs-5"> En Fast and Foodious tenemos todo lo que necesitas para distrutar de una comida inolvidable con tus seres queridos:</p>
+                        <ul class="fs-5">
+                            <li> Un ambiente calido y acogedro, perfecto para relajarse y disfrutar de la buena compañia</li>
+                            <li> Un menu variado y accesible, con opciones para todos los gustos</li>
+                            <li> Precios asequibles, para que puedas distrutar de una comida deliciosa sin gastar demasiado dinero</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p class="fs-1 text-center m-2">Recomiendanos un plato nuevo</p>
+        <!-- Form -->
+        <div class="w-75 mx-auto">
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="floatingInput" placeholder="Nombre del plato">
+                <label for="floatingInput">Nombre del plato</label>
+            </div>
+            <div class="form-floating mb-3">
+                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+                <label for="floatingTextarea2">Descripcion del plato</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="email" class="form-control" id="floatingPassword" placeholder="Dejanos tu correo de contacto">
+                <label for="floatingPassword">Email</label>
+            </div>
+            <div class="d-grid gap-2 mb-3 w-100">
+                <button class="btn btn-success" type="submit">Enviar</button>
+            </div>
+        </div>
+        
+
+    </body>
+    
     <footer>
         <nav class="navbar navbar-expand-lg" style="background-color: rgb(179, 98, 179);">
             <div class="container-fluid">
