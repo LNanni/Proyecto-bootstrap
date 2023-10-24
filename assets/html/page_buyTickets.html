@@ -1,0 +1,134 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buy Fast, Buy Food</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="shortcut icon" href="assets/img/logo.svg" type="image/x-icon">
+</head>
+<body style="background-color: rgb(207, 184, 207);">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="../js/sells.js"></script>
+
+    <header>
+        <nav class="navbar navbar-expand-md" style="background-color: rgb(179, 98, 179);">
+            <div class="container-fluid">
+                <img class="me-2" src="../img/logo.svg" alt="Logo" width="50" height="50">
+                <a class="navbar-brand" href="../../index.html">Fast and Foodious</a>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Hamburguesas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Lomos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Pachatas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Barrolucos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Pizzas</a>
+                        </li>
+                    </ul>
+                    <img src="../img/carrito.svg" alt="Compre ya" width="50" height="45">
+              </div>
+            </div>
+          </nav>
+    </header>
+    
+    <!-- Descuentos -->
+    <article>
+        <div class="card-group grid gap-2 w-75 p-3 mx-auto">
+            <div class="card border rounded text-center border-primary border-2">
+                <div class="card-body">
+                    <h5 class="card-title">Estudiante</h5>
+                    <p class="card-text mx-auto">Tienen un descuento</p>
+                    <p><strong>50%</strong></p>
+                    <p><small class="text-body-secondary">* Presentar documentación</small></p>
+                </div>
+            </div>
+            <div class="card border rounded text-center border-success border-2">
+                <div class="card-body">
+                    <h5 class="card-title mx-auto">Adulto</h5>
+                    <p class="card-text mx-auto">Tienen un descuento</p>
+                    <p><strong>10%</strong></p>
+                    <p><small class="text-body-secondary">* Presentar documentación</small></p>
+                </div>
+            </div>
+            <div class="card border rounded text-center border-danger border-2">
+                <div class="card-body">
+                    <h5 class="card-title mx-auto">Jubilado</h5>
+                    <p class="card-text mx-auto">Tienen un descuento</p>
+                    <p><strong>75%</strong></p>
+                    <p><small class="text-body-secondary">* Presentar documentación</small></p>
+                </div>
+            </div>
+        </div>
+    </article>
+    <p class="fs-1 text-center m-2">Valor de plato sorpresa $1000</p>
+    <!-- Form venta de tickets -->
+    <article class="w-75 mx-auto">
+        <form class="row g-3">
+            <div class="col-md-6">
+                <input type="text" class="form-control" id="inputName" placeholder="Nombre" required>
+            </div>
+            <div class="col-md-6">
+                <input type="text" class="form-control" id="inputLastName" placeholder="Apellido" required>
+            </div>
+            <div class="col-12">
+                <input type="email" class="form-control" id="inputEmail" placeholder="Correo" required>
+            </div>
+            <div class="col-md-6">
+                <label for="inputState" class="form-label">Cantidad</label>
+                <input type="number" class="form-control" id="inputCount" placeholder="Cantidad" required>
+            </div>
+            <div class="col-md-6">
+                <label for="inputState" class="form-label">Categoria</label>
+                <select id="inputState" class="form-select">
+                    <option selected>Estudiante</option>
+                    <option>Adulto</option>
+                    <option>Jubilado</option>
+                </select>
+            </div>
+            <div class="col-12">
+                <input type="text" class="form-control" placeholder="Total a pagar: $" id="outputPrice" readonly>
+            </div>
+            <div class="col-md-6 d-grid gap-2">
+                <button type="submit" class="btn btn-warning btn-block">Borrar</button>
+            </div>
+            <div class="col-md-6 d-grid gap-2">
+                <button type="submit" class="btn btn-success btn-block">Calcular</button>
+            </div>
+          </form>
+    </article>
+    <footer>
+        <nav class="navbar navbar-expand-lg" style="background-color: rgb(179, 98, 179);">
+            <div class="container-fluid">
+                <div class="navbar mx-auto" id="navbarSupportedContent">
+                    <ul class="navbar-nav">
+                        <li class="nav-item ps-3 pe-3">
+                            <a class="nav-link active" aria-current="page" href="#">Instagram</a>
+                        </li>
+                        <li class="nav-item ps-3 pe-3">
+                            <a class="nav-link active" href="#">Twitter</a>
+                        </li>
+                        <li class="nav-item ps-3 pe-3">
+                            <a class="nav-link active" href="#">Facebook</a>
+                        </li>
+                        <li class="nav-item ps-3 pe-3">
+                            <a class="nav-link active" href="#">Whatsapp</a>
+                        </li>
+                        <li class="nav-item ps-3 pe-3">
+                            <a class="nav-link active" href="#">Telegram</a>
+                        </li>
+                    </ul>
+              </div>
+            </div>
+        </nav>
+    </footer>
+</body>
+</html>
